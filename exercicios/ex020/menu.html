@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu com efeito hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+
+        .icone-de-menu {
+            font-size: 20px;
+            text-align: right;
+            padding: 15px;
+            background-color: #b41111;
+            cursor: pointer;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+
+        .menu {
+            font-size: 16px;
+            display: none;
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 5px;
+        }
+
+        .menu a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .menu li:hover {
+            background-color: white;
+        }
+
+        .icone-de-menu:hover .menu {
+            display: block;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: rgb(73, 71, 71);
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>exercicio</h1>
+    <div class="icone-de-menu">≡
+        <ul class="menu">
+            <a href="pseudoclasse.html"><li>PSEUDOCLASSE</li></a>
+            <a href="hover.html"><li>HOVER</li></a>
+            <a href="links.html"><li>LINKS</li></a>
+        </ul>
+    </div>
+</body>
+</html>
